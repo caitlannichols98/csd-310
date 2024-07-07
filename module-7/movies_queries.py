@@ -1,3 +1,14 @@
+import mysql.connector  # Or any other appropriate library for your database
+from mysql.connector import errorcode
+
+config = {
+    "user": "root",
+    "password": "Classroomhalfway06!",
+    "host": "127.0.0.1",
+    "database": "movies",
+    "raise_on_warnings": True
+}
+
 import sqlite3
 
 # Connect to SQLite database (replace 'your_database.db' with your actual database file)
@@ -111,3 +122,4 @@ for film in films_by_director:
 # Close cursor and connection
 cursor.close()
 conn.close()
+
